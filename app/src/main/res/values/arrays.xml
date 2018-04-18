@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="arr_room_number">
+        <item>   </item>
+        <item>101</item>
+        <item>201</item>
+        <item>202</item>
+        <item>301</item>
+        <item>302</item>
+        <item>401</item>
+        <item>402</item>
+        <item>501</item>
+        <item>502</item>
+    </string-array>
+
+</resources>
