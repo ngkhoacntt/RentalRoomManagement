@@ -1,29 +1,33 @@
 package com.example.nguyenkhoahung.rentalroommanagement;
 
-import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
 import android.view.View;
+import android.widget.TextView;
+import android.widget.Toolbar;
 
-public class CalculateRentMoney extends AppCompatActivity {
+import com.example.nguyenkhoahung.rentalroommanagement.viewbinder.Id;
+import com.example.nguyenkhoahung.rentalroommanagement.viewbinder.Layout;
+@Layout(R.layout.activity_calculate_rent_money)
+public class CalculateRentMoney extends BaseActivity {
+    @Id(R.id.tvPreviousElectricNumber)
+    private TextView tvPreviourElectricNumber;
 
+    @Id(R.id.toolbar)
+    private Toolbar toolbar;
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_calculate_rent_money);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
-
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
+    protected void onInitView() {
+        super.onInitView();
+        toolbar.setNavigationOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
+            public void onClick(View v) {
+                onBackPressed();
             }
         });
-    }
+        findViewById(R.id.btnBack).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onBackPressed();
+            }
+        });
 
+    }
 }
