@@ -9,14 +9,15 @@
 
     <!-- Calculate monthly money rent-->
     <string name="overview">Overview</string>
-    <string name="current_electric_number">Current Electric Number</string>
-    <string name="previous_electric_number">Previous Electric Number</string>
-    <string name="electric_usage">Electric usage</string>
-    <string name="room_number">Room Number</string>
-    <string name="total_money">Total</string>
+    <string name="current_electric_number">Current Electric Number:</string>
+    <string name="previous_electric_number">Previous Electric Number:</string>
+    <string name="electric_usage">Electric usage:</string>
+    <string name="room_number">Room Number:</string>
+    <string name="total_money">Total:</string>
+    <string name="house_name">House:</string>
     <string name="add">Add</string>
-    <string name="other_cost">Other cost</string>
-    <string name="note">Note</string>
+    <string name="other_cost">Other cost:</string>
+    <string name="note">Note:</string>
     <!-- Common label -->
     <string name="save">Save</string>
     <string name="edit">Edit</string>
